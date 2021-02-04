@@ -36,6 +36,9 @@ C. Classes
     5. Our Story - Section
     6. Tasteful Recipes
     7. Discover Our Menu
+    8. The Perfect Blend
+    9. Footer
+    10. Media Queries
 
 
 D. Forms
@@ -60,7 +63,7 @@ A. Global Section
 }
 
 /*-------------------------------------------
-    1. Root 
+    1. Root
 -------------------------------------------*/
 :root {
     --main-font           : 'Source Sans Pro', sans-serif;
@@ -446,8 +449,8 @@ C. Classes
     text-align: center;
 }
 
-.restaurant-info-img{
-    width: 100%;
+.restaurant-info-img {
+    width : 100%;
     margin: 0 auto;
 }
 
@@ -504,11 +507,11 @@ C. Classes
     background-size: cover;
 }
 
-.tasteful-recipes .sub-headline{
+.tasteful-recipes .sub-headline {
     -webkit-text-stroke: .3px var(--main-font-color-dark);
 }
 
-.tasteful-recipes .headline{
+.tasteful-recipes .headline {
     -webkit-text-stroke: .1px #55555593
 }
 
@@ -524,9 +527,9 @@ C. Classes
     grid-gap             : 1.5rem;
 }
 
-.discover-our-menu .restaurant-description{
-    padding-top: 3rem;
-    margin-bottom: 0; 
+.discover-our-menu .restaurant-description {
+    padding-top  : 3rem;
+    margin-bottom: 0;
 }
 
 
@@ -534,43 +537,148 @@ C. Classes
     8. The Perfect Blend
 *********************************************/
 
-.perfect-blend{
-    background: url("/assets/images/perfect-blend.jpg") center no-repeat;
+.perfect-blend {
+    background     : url("/assets/images/perfect-blend.jpg") center no-repeat;
     background-size: cover;
 }
 
-.perfect-blend .sub-headline{
+.perfect-blend .sub-headline {
     -webkit-text-stroke: .3px var(--main-font-color-dark);
 }
 
-.perfect-blend .headline{
+.perfect-blend .headline {
     -webkit-text-stroke: .1px #55555593
 }
 
 /*********************************************
     9. Footer
 *********************************************/
-footer{
-    padding: 7.9rem 0;
+footer {
+    padding         : 7.9rem 0;
     background-color: #121212;
-    color: #fff;
-    text-align: center;
-    position: relative;
+    color           : #fff;
+    text-align      : center;
+    position        : relative;
 }
 
-.back-to-top{
-    width: 7rem;
-    height: 7rem;
-    background-color: #121212;
-    position: absolute;
-    top: -3rem;
-    left: 50%;
-    transform: translateX(50%) ;
-    -webkit-transform: translateX(50%) ;
-    -moz-transform: translateX(50%) ;
-    -ms-transform: translateX(50%) ;
-    -o-transform: translateX(50%) ;
+.back-to-top {
+    width                : 7rem;
+    height               : 7rem;
+    background-color     : #121212;
+    position             : absolute;
+    top                  : -3rem;
+    left                 : 50%;
+    transform            : translateX(-50%);
+    -webkit-transform    : translateX(-50%);
+    -moz-transform       : translateX(-50%);
+    -ms-transform        : translateX(-50%);
+    -o-transform         : translateX(-50%);
+    border-radius        : 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius   : 50%;
+    -ms-border-radius    : 50%;
+    -o-border-radius     : 50%;
 }
+
+.back-to-top i {
+    display  : block;
+    color    : #fff;
+    font-size: 4rem;
+    padding  : 1rem;
+}
+
+.footer-content {
+    /* overflow: hidden; */
+}
+
+.footer-content h4 {
+    font-size     : 1.9rem;
+    text-transform: uppercase;
+    font-weight   : 700;
+    letter-spacing: 4px;
+    margin-bottom : 3rem;
+}
+
+.footer-content .cup {
+    margin: 2rem 0;
+}
+
+.footer-content-about{
+    margin-bottom: 5.4rem;
+}
+
+.footer-content-about p{
+    line-height: 3rem;
+}
+
+.social-icons{
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i{
+    font-size: 2rem;
+    color: #fff;
+    padding: .8rem 1.5rem;
+    opacity: .5;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+
+.social-icons i:hover,
+.social-icons i:focus{
+    color: var(--tertiary-font-color);
+}
+
+.newsletter-form{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-input{
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+}
+
+.newsletter-btn{
+    background-color: transparent;
+    border: none;
+    color: var(--main-font-color-dark);
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1px .6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    margin-left: 20.5rem;
+}
+
+/*********************************************
+    10. Media Queries
+*********************************************/
+
+
+
+
+/************** END OF | section  **************/
+
 
 
 
