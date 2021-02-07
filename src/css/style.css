@@ -38,13 +38,10 @@ C. Classes
     7. Discover Our Menu
     8. The Perfect Blend
     9. Footer
-    10. Media Queries
-
 
 D. Forms
 
-
-E. Utilities
+E. Media Queries
 
 
 -------------------------------------------------------------------*/
@@ -91,6 +88,10 @@ A. Global Section
 .global-headline {
     text-align: center;
     margin-top: 3.9rem;
+}
+
+.stroke-text{
+    -webkit-text-stroke: .7px var(--main-font-color-dark);
 }
 
 
@@ -512,7 +513,7 @@ C. Classes
 }
 
 .tasteful-recipes .headline {
-    -webkit-text-stroke: .1px #55555593
+    -webkit-text-stroke: .1px #c6c6c693
 }
 
 /*-------------------------------------------
@@ -532,10 +533,9 @@ C. Classes
     margin-bottom: 0;
 }
 
-
-/*********************************************
+/*-------------------------------------------
     8. The Perfect Blend
-*********************************************/
+-------------------------------------------*/
 
 .perfect-blend {
     background     : url("/assets/images/perfect-blend.jpg") center no-repeat;
@@ -547,12 +547,12 @@ C. Classes
 }
 
 .perfect-blend .headline {
-    -webkit-text-stroke: .1px #55555593
+    -webkit-text-stroke: .1px #c6c6c693
 }
 
-/*********************************************
+/*-------------------------------------------
     9. Footer
-*********************************************/
+-------------------------------------------*/
 footer {
     padding         : 7.9rem 0;
     background-color: #121212;
@@ -603,88 +603,216 @@ footer {
     margin: 2rem 0;
 }
 
-.footer-content-about{
+.footer-content-about {
     margin-bottom: 5.4rem;
 }
 
-.footer-content-about p{
+.footer-content-about p {
     line-height: 3rem;
 }
 
-.social-icons{
-    list-style: none;
-    margin-bottom: 5.4rem;
-    display: flex;
+.social-icons {
+    list-style     : none;
+    margin-bottom  : 5.4rem;
+    display        : flex;
     justify-content: center;
 }
 
-.social-icons i{
-    font-size: 2rem;
-    color: #fff;
-    padding: .8rem 1.5rem;
-    opacity: .5;
-    transition: color .5s;
+.social-icons i {
+    font-size         : 2rem;
+    color             : #fff;
+    padding           : .8rem 1.5rem;
+    opacity           : .5;
+    transition        : color .5s;
     -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -ms-transition: color .5s;
-    -o-transition: color .5s;
+    -moz-transition   : color .5s;
+    -ms-transition    : color .5s;
+    -o-transition     : color .5s;
 }
 
 .social-icons i:hover,
-.social-icons i:focus{
+.social-icons i:focus {
     color: var(--tertiary-font-color);
 }
 
-.newsletter-form{
-    width: 100%;
-    position: relative;
-    display: flex;
+.newsletter-form {
+    width          : 100%;
+    position       : relative;
+    display        : flex;
     justify-content: center;
 }
 
-.newsletter-input{
-    width: 100%;
-    max-width: 25rem;
-    padding: 1rem;
-    border-radius: .4rem;
+.newsletter-input {
+    width                : 100%;
+    max-width            : 25rem;
+    padding              : 1rem;
+    border-radius        : .4rem;
     -webkit-border-radius: .4rem;
-    -moz-border-radius: .4rem;
-    -ms-border-radius: .4rem;
-    -o-border-radius: .4rem;
+    -moz-border-radius   : .4rem;
+    -ms-border-radius    : .4rem;
+    -o-border-radius     : .4rem;
 }
 
-.newsletter-btn{
-    background-color: transparent;
-    border: none;
-    color: var(--main-font-color-dark);
-    cursor: pointer;
-    font-size: 1.6rem;
-    padding: 1px .6rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.newsletter-btn {
+    background-color : transparent;
+    border           : none;
+    color            : var(--main-font-color-dark);
+    cursor           : pointer;
+    font-size        : 1.6rem;
+    padding          : 1px .6rem;
+    position         : absolute;
+    top              : 50%;
+    transform        : translateY(-50%);
     -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    margin-left: 20.5rem;
+    -moz-transform   : translateY(-50%);
+    -ms-transform    : translateY(-50%);
+    -o-transform     : translateY(-50%);
+    margin-left      : 20.5rem;
 }
-
-/*********************************************
-    10. Media Queries
-*********************************************/
-
-
-
-
-/************** END OF | section  **************/
-
-
-
-
-
-
-
-
 
 /************** END OF | Classes  **************/
+
+/*********************************************
+E. Media Queries
+*********************************************/
+
+@media screen and (min-width: 900px) {
+    section {
+        padding: 7.9rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        position          : initial;
+        width             : initial;
+        height            : initial;
+        background-color  : transparent;
+        padding           : 0;
+        padding-top       : 2rem;
+        justify-content   : initial;
+        flex-direction    : row;
+        transform         : initial;
+        -webkit-transform : initial;
+        -moz-transform    : initial;
+        -ms-transform     : initial;
+        -o-transform      : initial;
+        transition        : initial;
+        -webkit-transition: initial;
+        -moz-transition   : initial;
+        -ms-transition    : initial;
+        -o-transition     : initial;
+    }
+
+    .nav-item {
+        margin: 0 2.4rem;
+        border: none;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0;
+        ;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    /*-- Active Line for the navbar --*/
+
+    .active {
+        position: relative;
+    }
+
+    .active::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        bottom: -3px;
+    }
+
+    .sub-headline{
+        font-size: 10rem;
+    }
+
+    .first-letter{
+        font-size: 11.6rem;
+    }
+
+    .headline{
+        font-size: 4.7rem;
+        letter-spacing: .4rem;
+    }
+    
+    .line{
+        max-width: 11.4rem;
+    }
+
+    .restaurant-info{
+        /*-- Flex the divs in a row  --*/
+        display: flex;
+        align-items: center;
+    }
+
+    /*To have more control of the divs inside the .restaurant-info*/
+    .restaurant-info > div {
+        /*They're going to have a same size (flex: 1;) */
+        flex: 1 ;
+    }
+
+    .padding-right{
+        padding-right: 7rem;
+    }
+
+    .culinary-delight .image-group {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .culinary-delight .image-group img{
+        width: 80%;
+    }
+
+    .footer-content{
+        max-width: 77.5rem;
+        /* To center the container on the middle */
+        margin: auto;
+    }
+
+    .footer-content-about{
+        margin: 0 auto 5.4rem;
+    }
+
+    .footer-content-divider{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .newsletter-form{
+        padding-right: 5rem;
+    }
+
+    .social-media,
+    .newsletter-form{
+        width: 100%;
+        max-width: 27.3rem;
+        margin: 0 2rem;
+    }
+
+    .social-icons i{
+        opacity: 1;
+    }
+
+    .newsletter-btn{
+        margin-left: 15.5rem;
+    }
+}
+/************** END OF | Media Queries  **************/
