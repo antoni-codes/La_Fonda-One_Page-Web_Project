@@ -112,7 +112,7 @@ A. Global Section
 B. HTML Elements Styling
 *********************************************/
 /*-------------------------------------------
-    1. HTML, Body
+    1. HTML, Body, Section
 -------------------------------------------*/
 html {
     font-family    : var(--body-font);
