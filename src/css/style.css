@@ -128,7 +128,7 @@ body {
 }
 
 section {
-    padding: 3.9rem 0;
+    padding : 3.9rem 0;
     /*overflow to the ScrollReveal*/
     overflow: hidden;
 }
@@ -218,6 +218,7 @@ C. Classes
     left              : 0;
     width             : 80%;
     height            : 100vh;
+    opacity           : 1;
     background-color  : var(--main-font-color-dark);
     padding           : 4.4rem;
     display           : flex;
@@ -306,7 +307,7 @@ C. Classes
 }
 
 /*-------------------------------------------
-   3. Buttons
+    3. Buttons
 -------------------------------------------*/
 .cta-btn {
     font-size            : 1.1rem;
