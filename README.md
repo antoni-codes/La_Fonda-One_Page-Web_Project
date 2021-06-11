@@ -1,4 +1,4 @@
-# La_Fonda-One_Page-Personal_Project
+# La_Fonda-One_Page-Web_Project
 
 Web Development | One page | La Fonda - Restaurant Site .
 
