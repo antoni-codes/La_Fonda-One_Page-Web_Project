@@ -6,6 +6,8 @@ Description: One Page Simulated Project, which shows an elegant and minimalist d
 
 About the project: Jquery, Scrollreveal.js, animations with keyframes. 
 
-Author: Tony-sys
+Author: Antonicodes
+
+URL Page: https://antoni-codes.github.io/La_Fonda-One_Page-Web_Project/
 
 For inspiration and feel free to use it
